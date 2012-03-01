@@ -16,38 +16,10 @@ public class HomeDashActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
+        setContentView(R.layout.home);
+   
+    
         
-        //Get google account info for calendar / docs
-        //AccountManager am = AccountManager.get(this); // "this" references the current Context
-        //Account[] accounts = am.getAccountsByType("com.google");
-
-      /*  mCalendarWebView = (WebView) findViewById(R.id.CalendarWebView);
-        mCalendarWebView.getSettings().setJavaScriptEnabled(true);
-        mCalendarWebView.loadUrl("http://www.blipfoto.com/BattisFamily");
-        mCalendarWebView.setWebViewClient(new HomeDashWebViewClient());
         
-        mWeatherWebView = (WebView) findViewById(R.id.WeatherWebView);
-        mWeatherWebView.getSettings().setJavaScriptEnabled(true);
-        mWeatherWebView.loadUrl("http://picasaweb.google.com/seanbattis");
-        mWeatherWebView.setWebViewClient(new HomeDashWebViewClient());*/
-    }
-    //todo: tricky having 2 webviews -Can't handle back for both at once, need to 
-    //have them go fullscreen, then go back...
-/*    @Override
-    public boolean onKeyDown(int keyCode, KeyEvent event) {
-        if ((keyCode == KeyEvent.KEYCODE_BACK) && mWebView.canGoBack()) {
-            mWebView.goBack();
-            return true;
-        }
-        return super.onKeyDown(keyCode, event);
-    }
-  */  
-    private class HomeDashWebViewClient extends WebViewClient {
-        @Override
-        public boolean shouldOverrideUrlLoading(WebView view, String url) {
-            view.loadUrl(url);
-            return true;
-        }
     }
 }
