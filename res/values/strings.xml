@@ -1,20 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <string name="hello">Hello World, HomeDashActivity!</string>
     <string name="app_name">HomeDash</string>
-    <string name="cal_title">Calendar</string>
+    <string name="workouts_title">Workout Schedules</string>
     <string name="shop_title">Grocery List</string>
     <string name="weather_title">Today&quot;s Weather</string>
-    <string name="schedule_title">Daily Responbilities &amp; Schedules:</string>
-    <string name="clean_title">Cleaning and Home Maintanence</string>
-    <string name="projects_title">Running Project List:</string>
-    <string name="menu_title">Today's Menu</string>
+    <string name="schedule_title">Responsibilities &amp; Reminders:</string>
+    <string name="clean_title">Cleaning Schedule</string>
+    <string name="menu_title">Today\'s Menu</string>
     <string name="breakfast_title">Breakfast</string>
     <string name="lunch_title">Lunch</string>
     <string name="dinner_title">Dinner</string>
-    <string name="dessert_title">Dessert</string>
-    <string name="focus_title">Daily Focus Activity:</string>
-    <string name="forget_title">Don't Forget</string>
-
+    <string name="sean_title">Sean</string>
+    <string name="rachel_title">Rachel</string>
 </resources>

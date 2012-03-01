@@ -1,91 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent" >
 
     <LinearLayout
         android:id="@+id/linearLayout1"
-        android:gravity="center_horizontal"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:orientation="vertical" 
-        android:layout_weight="1">
-
-		<ImageButton
-		    android:id="@+id/imageButton1"
-		    android:layout_width="match_parent"
-		    android:layout_height="wrap_content"
-		    android:src="@drawable/header1" 
-		    android:contentDescription="Header Image 1"/>
-
-<!--          <WebView
-		  android:id="@+id/WeatherWebView"
-          android:text="@string/weather_title"
-          android:gravity="center_horizontal"
-          android:background="#aa0000"
-          android:layout_width="fill_parent"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"/>  -->
-
-		<DatePicker
-		    android:id="@+id/datePicker1"
-		    android:layout_width="match_parent"
-		    android:layout_height="wrap_content" />
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+	
+          <WebView
+              android:id="@+id/WeatherWebView"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_weight="0.11"
+              android:background="#aa0000"
+              android:gravity="center_horizontal"
+              android:text="@string/weather_title" />
 
 		<DigitalClock
 		    android:id="@+id/digitalClock1"
 		    android:layout_width="wrap_content"
 		    android:layout_height="wrap_content"
 		    android:text="DigitalClock" />
-
-      <TextView
-          android:layout_width="fill_parent"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:background="#00bb00"
-          android:gravity="center_horizontal"
-          android:text="@string/schedule_title" />
-
-<TextView
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:layout_weight="1"
-    android:background="#00aa00"
-    android:gravity="center_horizontal"
-    android:text="@string/clean_title" />
-
-      <TextView
-          android:layout_width="fill_parent"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:background="#00bb00"
-          android:gravity="center_horizontal"
-          android:text="@string/projects_title" />
-
-    </LinearLayout>
-
+	</LinearLayout>
     <LinearLayout
         android:id="@+id/linearLayout2"
         android:gravity="center_horizontal"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:orientation="vertical" 
+        android:orientation="horizontal" 
         android:layout_weight="1">
-
-        <ImageButton
-			    android:id="@+id/imageButton2"
-			    android:layout_width="match_parent"
-			    android:layout_height="wrap_content"
-			    android:src="@drawable/header1" />
-
-        <LinearLayout
-            android:id="@+id/linearLayout4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal" >
-
-            <TextView
+        <TextView
                 android:id="@+id/textView1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -94,7 +43,7 @@
                 android:text="Medium Text"
                 android:textAppearance="?android:attr/textAppearanceMedium" />
 
-            <TextView
+        <TextView
                 android:id="@+id/textView2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -102,66 +51,5 @@
                 android:background="#000033"
                 android:text="TextView" />
 
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:background="#00bb00"
-            android:gravity="center_horizontal"
-            android:text="@string/menu_title" />
-
-        <LinearLayout
-            android:id="@+id/LinearLayout01"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal" >
-
-            <TextView
-                android:id="@+id/TextView02"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:background="#0000aa"
-                android:text="@string/breakfast_title"
-                android:textAppearance="?android:attr/textAppearanceMedium" />
-
-            <TextView
-                android:id="@+id/TextView01"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:background="#000033"
-                android:text="@string/lunch_title" />
-
-            <TextView
-                android:id="@+id/TextView02"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:background="#0000aa"
-                android:text="@string/dinner_title"
-                android:textAppearance="?android:attr/textAppearanceMedium" />
-
-            <TextView
-                android:id="@+id/TextView01"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:background="#000033"
-                android:text="@string/dessert_title" />
-		</LinearLayout>
-
-	<TextView
-	    android:layout_width="fill_parent"
-	    android:layout_height="wrap_content"
-	    android:background="#00aa00"
-	    android:gravity="center_horizontal"
-	    android:text="@string/focus_title" />
-
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:background="#00aa00"
-            android:gravity="center_horizontal"
-            android:text="@string/forget_title" />
-	
     </LinearLayout>
-
 </LinearLayout>
